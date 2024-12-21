@@ -6,7 +6,8 @@ const score = 100
 const scoreValue = 100.3
 
 
-const isLoggedIn = false
+const isLoggedIn = false 
+
 const outsideTemp = null
 
 let userEmail;
@@ -23,7 +24,7 @@ const bigNumber = 234567899876543
 
 //Array, Objects ,Functions
 
-const heros = ['shaktiman', 'ironman', 'antman']
+const heros = ['shaktiman', 'ironman', 'antman'] //Array
 
 let myObj = {
     name: "arsul",

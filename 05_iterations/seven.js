@@ -11,4 +11,3 @@ const newNum = myNumbers
 
 console.log(newNum);
 
-

@@ -52,13 +52,15 @@ let str2 = " arsul"
 
 let str3 = str1 + str2
 
-console.log(str3);
+// console.log(str3);
 
 
 // console.log( "1" + 2);
 // console.log(1 + "3");
 // console.log("1" + 2 + 3);
-// console.log(1 + 2 + "2");
+// console.log(1 + 2 + "2");  //Here: when we have two element in same datatype then add just like the ( 1+2=3 then add string part like that = 32) but our right answer is 5 but he gives you 32 because 1 or 2 same datatype interger but "2" is string so he add string part like that = 32
+
+
 
 // console.log((3+3) * 5 % 3);
 
@@ -71,7 +73,7 @@ let num1, num2, num3
 num1 = num2 = num3 = 2 + 2
 
 let gameCounter = 100
-++gameCounter;
+gameCounter++;
 console.log(gameCounter);
 
 

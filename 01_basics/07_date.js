@@ -1,6 +1,6 @@
 // ++++++++++++++++++++++ Dates +++++++++++++++++++++++++++++++++
 
-// let myDate = new Date()
+let myDate = new Date() //here: type of object.
 // console.log(myDate.toString());
 // console.log(myDate.toDateString());
 // console.log(myDate.toISOString());
@@ -25,19 +25,26 @@ let myTimeStamp = Date.now()
 // Here: Take current date
 let newDate = new Date()
 // console.log(newDate);
-// console.log(newDate.getMonth());
+// console.log(newDate.getMonth() + 1); // here give you month but here add +1 means the javascript start month on 0.
 // console.log(newDate.getDay());
 
 // Here: Customize date
-let custom_date = newDate.toLocaleString('default', {
+let custom_date =  newDate.toLocaleString('default', {
     // weekday:"long",             
     // year:"numeric",
     // day:"2-digit",
-    dateStyle:"full",
-    timeStyle:"full"
-})
+    // dateStyle:"full",
+    // timeStyle:"full",
+    // calendar: "gregory",
 
-console.log(custom_date);
+});
+
+// console.log(custom_date);
+
+
+
+
+
 
 
 

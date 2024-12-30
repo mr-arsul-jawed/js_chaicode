@@ -41,9 +41,9 @@ let myObj = {
 
 // Stack (Primitive), Heap  (Non-Primitive)
 
-//Stack: the stack give me copies 
+//Stack: the stack give me copies.
 
-// Heap: The heap is give you original
+//Heap: The heap is give you original.
 
 let youtube = "arsul"
 

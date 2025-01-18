@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <title>DOM Learninig</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body  class="bg-black">
+    <div>
+        <h1 id="title" class="heading">DOM Learning 
+            <span style="display: none;">text test</span></h1>
+            <h2>what is js!</h2>
+            <h3>what is html!</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <input type="password" name="" id="">
+         <ul>
+            <li class="list">One</li>
+            <li class="list">two</li>
+            <li class="list">three</li>
+            <li class="list">four</li>
+         </ul>
+    </div>
+</body>
+</html> 
+
+
+<!-- 
+  Here: notes
+// here: notes foe DOM
+1. DOM(Document object model) = When you try to access and manipulate the elements of a web page then = document.getElementById("").innerHTML = ""  
+// here: here use how to get id in dom using getElementById and also how to get class using getElementsByClassName 
+2. document.getElementById("").id 
+3. document.getElementById("").className 
+//here: how to use id then find getAttribute = document.getElementById("").getAttribute('id')
+4. document.getElementById("").getAttribute('id')
+5. document.getElementById("").getAttribute('className')
+6. document.getElementById("").getAttribute('style')
+// here: look here hold all data in title variable then doing operation on take variables
+7. const title = document.getElementById("title")
+8. title.innerHTML = "Hello World"
+9. title.style.color = "red"
+10. title.querySelector("span").style.display = "block"
+
+
+here: operation on querySelector and also important you hold the data in the variable just look like(myul)
+11. document.querySelector('ul')
+12. const myul = document.querySelector('ul')
+13. myul.querySelector('li')
+14. myul.querySelector('li').style.backgroundColor= "green"
+
+here: querSelectorAll('h1') but querySelectorAll just look like array.
+const  myH1 = document.querySelectorAll('h1')
+myH1.style.color = 'green' // this is wrong way to access in querySelectorAll
+myH1[0].style.color = 'green'  // this is correct way to access in querySelectorAll
+
+//here: important
+querySelectorAll = when you use querySelectorAll then you have give nodelist and in nodelist provide prototype and in prototype so many functionality just like (foreach, lenght)
+htmlcollection = when you use getElementByClassName then you have give htmlcollection.
+-->

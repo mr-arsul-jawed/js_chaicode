@@ -4,8 +4,7 @@ var accountPassword = "12345"
 accountCity = "jaipur"
 
 
-//accountId = 2
-
+//accountId = 2 
 accountEmail = "jawed@gmail.com"
 accountPassword = "112233"
 accountCity = "kolkata"

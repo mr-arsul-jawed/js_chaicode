@@ -5,7 +5,7 @@
 
 // eg: 1
 // Here: When you try to iterate the array then use for-of loop.
-const arr = [2, 3,0 ,5, 6, 7]
+const arr = [2, 3, 0 ,5, 6, 7]
 
 for (const val of arr) {
     // console.log(val);

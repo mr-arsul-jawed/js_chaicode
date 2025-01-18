@@ -45,7 +45,7 @@ for (let index = 0; index < myArray.length; index++) {
 // for (let index = 0; index <= 20; index++) {
 //     if (index == 5) {
 //         console.log(`DeTECTED 5`);
-//         continue
+//         break
 //     }
 //     console.log(`value of i is ${index}`);
 // }

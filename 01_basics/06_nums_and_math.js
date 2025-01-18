@@ -2,7 +2,7 @@ const score = 400
 // console.log(score);
 
 
-const balance = new Number(100) // here: balnce type is object
+const balance = new Number(100) // here: balance type is object
 // console.log(balance);
 // console.log(typeof balance);
 

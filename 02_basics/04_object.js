@@ -1,5 +1,5 @@
 // const tinderUser = new Object() // :here this is single term object. 
-const tinderUser = {} //here: this is non-dingleterom object
+const tinderUser = {}  //here: this is non-dingleterom object
 
 
 

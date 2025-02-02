@@ -30,6 +30,10 @@ if (Object.keys (emptyobj).length === 0 ) {
     console.log("empty object");
     
 }
+else{
+    console.log("somethings");
+    
+}
 
 // Null Coalescing Operator (??): null undefined
 
@@ -47,5 +51,5 @@ val1 = null ?? 10 ?? 50
 
 const iceTeaPrice = 100
 
-iceTeaPrice >= 80 ? console.log("less than 80") : console.log("more than 80");
+iceTeaPrice >= 80 ? console.log("more than 80") : console.log("less than 80");
 

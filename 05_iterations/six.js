@@ -41,15 +41,26 @@ const books = [
     {title: 'Book Ten', genre: 'History', publish: 1990, edition: 2015},
 ];
 
-let userbooks = books.filter((bk)=>{
- return  bk.genre === "Fiction"
+
+let newset = books.filter((bk)=>{
+   return bk.genre ==="Fiction"
 })
 
+console.log(newset);
 
-userbooks = books.filter((bk)=>{
-    return bk.publish >= 1981 && bk.genre === "History"
-})
+// let userbooks = books.filter((bk)=>{
+//  return  bk.genre === "Fiction"
+// })
 
-console.log(userbooks);
+
+// userbooks = books.filter((bk)=>{
+//     return bk.publish >= 1981 && bk.genre === "History"
+// })
+
+// let userbooks = books.filter((bk)=>{
+//     return bk.publish >= 1981 && bk.publish <= 2005 && bk.genre === "History"
+// })
+
+// console.log(userbooks);
 
 

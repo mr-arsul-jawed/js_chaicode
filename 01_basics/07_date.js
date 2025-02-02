@@ -15,7 +15,7 @@ let myDate = new Date() //here: type of object.
 // console.log(myCreatedDate.toLocaleString());
 
 
-let myTimeStamp = Date.now()
+let myTimeStamp = Date.now() // here: set the current date
 
 // console.log(myTimeStamp);
 // console.log(myCreatedDate.getDate());

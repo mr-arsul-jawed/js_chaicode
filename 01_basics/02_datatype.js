@@ -5,9 +5,9 @@
 
 
 
-console.log(3 
-    + 
-    4); //code readability should  be high
+// console.log(3 
+//     + 
+//     4); //code readability should  be high
 
 let name = "arsul"
 let age = 19
@@ -25,7 +25,10 @@ let isLoggedI = false
 //object
 
 //Here: When you check type of null then give you the type null is object.
-console.log(typeof null); //object
-console.log(typeof undefined); //undefined
+// console.log(typeof null); //object
+// console.log(typeof undefined); //undefined
+
+
+
 
 

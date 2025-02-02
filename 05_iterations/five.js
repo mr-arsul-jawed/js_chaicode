@@ -41,9 +41,20 @@ const myCoding =[
     },
 ]
 
-myCoding.forEach((item)=>{
-   console.log(item.languageName);
-   console.log(item.languagefilename);
-   
-   
+
+
+
+myCoding.map((item)=>{
+   console.log(`languaeName ${item.languageName}`);
+   console.log(`languagefilename: ${item.languagefilename}`);
 })
+
+
+
+// myCoding.forEach((item)=>{
+//    console.log(item.languageName);
+//    console.log(item.languagefilename);
+// })
+
+
+

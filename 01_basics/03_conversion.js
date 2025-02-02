@@ -74,17 +74,13 @@ num1 = num2 = num3 = 2 + 2
 
 let gameCounter = 100
 gameCounter++;
-console.log(gameCounter);
+// console.log(gameCounter);
 
+// let  a  = Number ("33")
+// let b = 33
 
-
-
-
-
-
-
-
-
+// r =  a + b 
+// console.log(r);
 
 
 

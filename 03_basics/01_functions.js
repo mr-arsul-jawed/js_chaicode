@@ -93,5 +93,37 @@ function returnSecondValue(getArray) {
 
 
 
+// function name_r(username) {
+//      if (!username.includes("@") || !username.includes(".")) {
+//        console.log("Enter the correct username");
+//     //    return True
+//     }
+//     else{
+//         console.log(`Welcome to Coding World ${username}`);
+//         // return true
+//     }
+// }
+
+// name_r("arsuljawed97.@");
+
+
+
+// ONLY EXPLANATION
+// const user1 ={
+//     name:"arsul",
+//     roll:"bca223015"
+// }
+
+// const arsul = {
+//     name:"arsul12",
+//     roll:"Bca223015"
+// }
+
+// function details(any) {
+//     console.log(`welcome to ${any.name} ans your roll is ${any.roll}`);
+    
+// }
+
+// details(arsul)
 
 

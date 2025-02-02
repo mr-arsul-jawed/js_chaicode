@@ -29,7 +29,7 @@
 
 // const balance = 1000
 
-// if (balance > 500)  console.log("test"); // here: implicites scoop.
+// // if (balance > 500)  console.log("test"); // here: implicites scoop.
 
 
 // if (balance < 500) {
@@ -50,12 +50,30 @@ const debitCard = true
 const loggedInFromGoogle = false
 const loggedInFromEmail = true
 
-if (userLoggedIn && debitCard && 2 ==="2") {
-    console.log("Allow tp buy courses");
+// if (userLoggedIn && debitCard && 2 ==="2") {
+//     console.log("Allow to buy courses");
     
-}
+// }
 
-if (loggedInFromGoogle || loggedInFromEmail) {
-    console.log(`User Logged In`);
+// if (loggedInFromGoogle || loggedInFromEmail) {
+//     console.log(`User Logged In`);
     
-}
+// }
+
+
+//+++++++++++++++++++++++++++++ While loop ++++++++++++++++++++++++++++
+
+i = 0
+let text = " "
+
+while (i < 10) {
+    text += "\nThis is number" + i;
+    i++;
+
+  }
+  
+  
+  console.log(text);
+//   console.log(res);
+  
+  

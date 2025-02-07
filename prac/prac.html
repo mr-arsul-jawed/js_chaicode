@@ -47,19 +47,29 @@
      <p id="demo">A paragraph</p>
      <button type="button" onclick="myfun()">Try it</button>
      <button type="button" onclick="myfun2()">Pre it</button>
-     <script>
+<script>
     function myfun() {
         document.getElementById("demo").innerText = "Welcome New paragraph";
         let myh2 = document.querySelectorAll("h2")
+        console.log(myh2);
+        
+        //here: add new h2 in body
+        const h2 = document.createElement("h2")
+        h2.innerText = "demo new"
+        document.body.appendChild(h2)
+        
         myh2[1].style.color = "Green";
         myh2[0].style.color = "white";
     }
+    myfun()
     function myfun2() {
         document.getElementById("demo").innerText = "A paragraph";
         let myh2 = document.querySelectorAll("h2")
         myh2[0].style.color = "red";
         myh2[1].style.color = "white";
     }
+
+  
  </script>
    
 </body>

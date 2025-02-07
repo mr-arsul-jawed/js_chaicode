@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai and code | DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+function addLanguage(langName){
+    const myli = document.createElement('li');
+    // myli.innerHTML = `${langName}`
+    const addlang = document.createTextNode(`${langName}`)
+    myli.appendChild(addlang)
+    // const language = document.querySelector('.language')
+    // language.appendChild(myli) 
+    document.querySelector('.language').
+    appendChild(myli)
+     
+}
+addLanguage("python")
+
+function addOptiLanguage(langName) {
+    const myli = document.createElement('li')
+    myli.appendChild(document.createTextNode(`${langName}`))
+    document.querySelector('.language').appendChild(myli)
+}
+addOptiLanguage('Mojo')
+addOptiLanguage('golang')
+
+//here: Edit Method: 1:
+//Edit SECONDLANG
+const secondlang = document.querySelector("li:nth-child(2)")
+// console.log(secondlang);
+// secondlang.innerHTML = "mojo"
+const newLi = document.createElement('li')
+newLi.textContent = 'Mojo'
+secondlang.replaceWith(newLi)
+
+//here: Edit Method: 2:
+//Edit FIRSTLANG
+const   Firstlang1 = document.querySelector('li:nth-child(1)')
+// console.log(Firstlang1);
+
+const newoneli = document.createElement('li')
+newoneli.textContent = "Ruby"
+Firstlang1.replaceWith(newoneli)
+
+//here: Edit Method:3:
+const firstlang2 = document.querySelector("li:first-child")
+// console.log(firstlang2);
+firstlang2.outerHTML = '<li>TypeScript</li>'
+
+//here: Edit Method:4:
+//Edit  THIRDLANG
+const ThirdLi = document.querySelector('li:nth-child(3)')
+// console.log(ThirdLi);
+
+const newThirdli = document.createElement('li')
+newThirdli.textContent = "C++"
+ThirdLi.replaceWith(newThirdli)
+
+//Remove 
+
+const lastlang = document.querySelector('li:last-child')
+console.log(lastlang); 
+lastlang.remove()
+
+
+ 
+
+
+
+
+
+
+
+
+    
+    
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

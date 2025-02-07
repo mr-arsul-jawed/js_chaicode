@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Number Guessing Game</title>
+    <!-- <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles.css"> -->
+</head>
+<body style="background-color:#212121; color:#fff;">
+    <div id="wrapper">
+    <h1>Number guessing game</h1>
+    <p>Try and guess a random number between 1 and 100.</p>
+    <p>You have 10 attempts to guess the right number.</p>
+    </br>
+        <form class="form">
+            <label for="guessField" id="guess">Guess a number</label>
+            <input type="text" id="guessField" class="guessField"> //this section is userInput.
+            <input type="submit" id="subt" value="Submit guess" class="guessSubmit"> //This is button section.
+        </form>
+
+        <div class="resultParas">
+            <p >Previous Guesses: <span class="guesses"></span></p>
+            <p >Guesses Remaining: <span class="lastResult">10</span></p>
+            <p class="lowOrHi"></p>
+        </div>
+    </div>
+<script>
+
+    let  randomNumber = parseInt(Math.random()  * 100 + 1)
+    const userInput = document.querySelector('#guessField') //This is input method
+    const submit = document.querySelector('#subt') //This is submit button method
+    const guessSlot = document.querySelector('.guesses') //This is previous guesses method
+    const remaining = document.querySelector('.lastResult') //This is remaining guesses method
+    const lowOrHi = document.querySelector('.lowOrHi') //This is low or high method
+    const startOver = document.querySelector('.resultParas') //This is start over method
+
+    const p = document.createElement('p'); //New element here 
+ 
+    let prevGuess = []; //This is empty array
+
+    let numGuess = 1;
+
+    let playGame = true;
+
+    if (playGame) {
+        submit.addEventListener('click',(e)=>{
+           e.preventDefault()
+           const guess =  parseInt(userInput.value) //Here UserInput
+        //    console.log(guess);
+           validateGuess(guess)
+        })
+    }
+   
+
+     
+    function validateGuess(guess) {
+        // check the number it valid or not in this function
+        if (isNaN(guess)) {
+            alert("Invalid input. Please enter a number.");
+        } else if(guess < 1){
+            alert("Please enter a number between 1 and 100")
+        }else if(guess > 100){
+            alert("Please enter a number between 1 and 100")
+        } else {
+            prevGuess.push(guess) //This prevGuess is empty then push the data
+            if (numGuess === 11) {
+                displayGuess(guess)
+                displayMessage(`Game Over. The number was ${randomNumber}`)
+                endGame()
+            } else {
+                displayGuess(guess)
+                checkGuess(guess)
+            }
+        }
+    }
+
+    function checkGuess(guess) {
+     // check the guess number is high or low and equal that method check in this function.
+     if (guess == randomNumber) {
+        displayMessage('You guessed is right')
+        endGame();
+     } else if (guess < randomNumber){
+        displayMessage('Number is Too low')
+     } else if (guess > randomNumber){
+        displayMessage('Number is Too high')
+
+     }
+    }
+
+    function displayGuess(guess) {
+      // this function update the remaining chance and update  
+      userInput.value = ' ';
+      guessSlot.innerHTML += `${guess}, `
+      numGuess++;
+      remaining.innerHTML = `${11 - numGuess}`
+    }
+
+    function displayMessage(message) {
+    // This function display the message to the user.
+     lowOrHi.innerHTML = `<h2>${message}</h2>`
+    }
+
+    function endGame() {
+    // This function end game
+    userInput.value = ''
+    userInput.setAttribute('disabled', '')
+    p.classList.add('button')
+    p.innerHTML = `<h2 id="newGame">Start new Game</h2>`;
+    startOver.appendChild(p)
+    playGame = false
+    newGame()
+    }
+
+    function newGame() {
+    // This function start the new game
+    const newGameButtton = document.querySelector('#newGame')
+    newGameButtton.addEventListener('click',()=>{
+    randomNumber = parseInt(Math.random()  * 100 + 1)
+    playGame = []
+    numGuess = 1
+    guessSlot .innerHTML = ''
+    remaining.innerHTML = `${11 - numGuess}`
+    userInput.removeAttribute('disabled')
+    lowOrHi.innerHTML = '';
+    startOver.removeChild(p)
+    playGame = true
+   })
+}
+</script>
+</body>
+</html>

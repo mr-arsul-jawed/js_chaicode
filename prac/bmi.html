@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <form id="form">
+          <p><label>Height in CM: </label><input type="text" id="height" /></p>
+          <p><label>Weight in KG: </label><input type="text" id="weight" /></p>
+          <button type="submit">Calculate</button>
+          <div id="results"></div>
+          <div id="weight-guide">
+            <h3>BMI Weight Guide</h3>
+            <p>Under Weight = Less than 18.6</p>
+            <p>Normal Range = 18.6 and 24.9</p>
+            <p>Overweight = Greater than 24.9</p>
+          </div>
+        </form>
+      </div>
+
+<script>
+   const form = document.querySelector('form');
+
+// console.log(form)
+
+
+form.addEventListener('submit',(e)=>{
+   e.preventDefault();
+
+  const height = parseInt(document.querySelector('#height').value);
+  const weight = parseInt(document.querySelector('#weight').value);
+  const results = document.querySelector('#results');
+  const weightGuide = document.querySelector('#weight-guide');
+
+
+  if (!height || height <= 0 || isNaN(height)) {
+                results.innerHTML = `<p style="color: red;">Please enter a valid height.</p>`;
+                return;
+            }
+            if (!weight || weight <= 0 || isNaN(weight)) {
+                results.innerHTML = `<p style="color: red;">Please enter a valid weight.</p>`;
+                return;
+            }
+    const bmi = (weight / ((height * height) / 10000)).toFixed(2);
+    results.innerHTML = `<p>Your BMI is: <strong>${bmi}</strong></p>`; 
+  
+
+  let message = '';
+  let color = '';
+
+
+
+            if (bmi < 18.6) {
+                message = 'You are <strong style="color: blue;">Underweight</strong>. Eat a nutritious diet!';
+                color = 'blue';
+            } else if (bmi >= 18.6 && bmi <= 24.9) {
+                message = 'You are in the <strong style="color: green;">Normal Range</strong>. Keep up the good health!';
+                color = 'green';
+            } else {
+                message = 'You are <strong style="color: red;">Overweight</strong>. Consider a healthy lifestyle!';
+                color = 'red';
+            }
+
+            weightGuide.innerHTML = `
+                <h3 style="color: ${color};">BMI Weight Guide</h3>
+                <p>${message}</p>
+            `;
+        });
+  
+
+  
+
+
+
+</script>
+</body>
+
+</html>

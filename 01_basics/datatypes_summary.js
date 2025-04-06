@@ -1,9 +1,9 @@
 //Primitive
 
-//7 types: String, Number, Boolean, null, undefined, Symbol, BigInt
+//7 types: String, Number, Boolean, null, undefined, Symbol, BigInt 
 
-const score = 100
-const scoreValue = 100.3
+const score = 100 
+const scoreValue = 100.3 
 
 
 const isLoggedIn = false 
@@ -54,17 +54,24 @@ anothername = "aashim"
 // console.log(youtube);
 // console.log(anothername);
 
-let user = {
-    email:"arsul@google.com",
-    upi:"upi@ybl",
-}
+// let user = {
+//     email:"arsul@google.com",
+//     upi:"upi@ybl",
+// }
 
-let userTwo = user;
+// let userTwo = user;
 
-userTwo.email = "google@gmail.com"
+// userTwo.email = "google@gmail.com"
 
-console.log(user.email);
-console.log(userTwo.email);
+// console.log(user.email);
+// console.log(userTwo.email);
+
+
+
+
+
+
+
 
 
 

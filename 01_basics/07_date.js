@@ -30,16 +30,16 @@ let newDate = new Date()
 
 // Here: Customize date
 let custom_date =  newDate.toLocaleString('default', {
-    // weekday:"long",             
-    // year:"numeric",
-    // day:"2-digit",
+    weekday:"long",             
+    year:"numeric",
+    day:"2-digit",
     // dateStyle:"full",
     // timeStyle:"full",
     // calendar: "gregory",
 
 });
 
-// console.log(custom_date);
+console.log(custom_date);
 
 
 

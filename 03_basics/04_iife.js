@@ -18,10 +18,13 @@
 
 
 
+
+
 //Here: only example:
 (function name() {
     console.log(`hello db`);
 })();
+
 
 ((name, details)=>{
      console.log(`Name: ${name} and  username: ${details.username} or age: ${details.age}`);
@@ -29,4 +32,5 @@
      username: "arsul1",
      age: 90
 });
+
 

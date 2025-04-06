@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing:border-box;
+    }
+    body{
+        box-sizing: border-box;
+        background-color: yellowgreen;
+        width: 100%;
+        background-color: white;
+
+    }
+    div{
+        height: 80px;
+        width: 50%;
+        margin: 20px;
+    }
+    
+    .button{
+        width: 100px;
+        height:100px;
+        border-radius: 20px;
+        background-color: aqua;
+    }
+    #red{
+        background-color: rgb(209, 22, 22);    
+    }
+    
+    #pink{
+        background-color: pink;
+    }
+    
+    #green{
+        background-color: green;
+    }
+    
+    #blue{
+        background-color:blue;
+    }
+    
+</style>    
+<body>
+    <div class="box">
+        <div id="red" class="button"></div>
+        <div id="pink" class="button"></div>
+        <div id="green" class="button"></div>
+        <div id="blue" class="button"></div>
+        <div id="purple" class="button"></div>
+    </div>
+</body>
+<script>
+// const button = document.querySelectorAll('.button')
+// //    console.log(button);
+   
+// const body = document.querySelector('body')
+  
+// button.forEach((button)=>{
+//     button.addEventListener('click',(e)=>{
+//         console.log(e.target.id);
+//         if (e.target.id == "red") {
+//             body.style.backgroundColor = e.target.id
+//             // button.style.backgroundColor = "white"
+//         }
+//         if (e.target.id == "pink") {
+//             body.style.backgroundColor = e.target.id
+//             // button.style.backgroundColor = "white"
+//         }
+//         if (e.target.id == "green") {
+//             body.style.backgroundColor = e.target.id
+//             // button.style.backgroundColor = "white"
+//         }
+//         if (e.target.id == "blue") {
+//             body.style.backgroundColor = e.target.id
+//             // button.style.backgroundColor = "white"
+//         }
+//         if (e.target.id == "purple") {
+//             body.style.backgroundColor = e.target.id
+//             // button.style.backgroundColor = "white"
+//         }
+        
+//     })
+// })
+
+// here: Again write the code for remembering the method
+
+const button = document.querySelectorAll('.button')
+const body = document.querySelector('body')
+// console.log(button);
+
+button.forEach((button)=>{
+//    console.log(button);
+
+button.addEventListener('click',(e)=>{
+
+    if (e.target.id == "red") {
+        body.style.backgroundColor = e.target.id
+        
+    }
+    if (e.target.id == "green") {
+        body.style.backgroundColor = e.target.id
+        
+    }
+    if (e.target.id == "blue") {
+        body.style.backgroundColor = e.target.id
+        
+    }
+    if (e.target.id == "pink") {
+        body.style.backgroundColor = e.target.id
+        
+    }
+    if (e.target.id == "purple") {
+        body.style.backgroundColor = e.target.id
+        
+    }
+    
+
+})
+   
+})
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>

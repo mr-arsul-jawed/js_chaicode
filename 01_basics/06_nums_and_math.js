@@ -31,7 +31,7 @@ const hundred = 10000
 // console.log(Math.abs(-4)); // here: abs use for get absolute value of the number mean when we have negative number then he change the number to positive number.
 // console.log(Math.round(4.60)); //here: round use for get the round of the nuhmber just like 4.6 then he become 5.
 // console.log(Math.round(4.06)); //here: round use for get the round of the number just like 4.06 then he become 4. this is interesting part.
-// console.log(Math.ceil(4.1)); //here: ceil use for get the ceil of the number just like 4.1 then he become 5
+// console.log(Math.ceil(4.05)); //here: ceil use for get the ceil of the number just like 4.1 then he become 5
 // console.log(Math.ceil(-4.004)); //here: ceil use for get the ceil of the number just like -4.004 then he give you -4 
 // console.log(Math.floor(4.9));
 // console.log(Math.floor(-5.05)) //here: floor use for get the floor of the number just like -5.05 then he give you -6.
@@ -43,7 +43,7 @@ const hundred = 10000
 
 // console.log(Math.random());
 // console.log(Math.random() * 10 + 1);
-// console.log(Math.floor(Math.random()*10) + 1);
+// console.log(Math.floor(Math.random()*100) + 1);
 
 
 const min = 10

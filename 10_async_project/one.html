@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai and code</h1>
+    <button style="padding: 10px; background-color: rgb(61, 13, 233); border-radius: 5px;" id="stop">Stop</button>
+</body>
+<script>
+
+     //                       NOTES:
+     //clearTimeout and setTimeout is used to Cancelling a delayed function.
+        //clearInterval and setInterval is used to 	Stopping a repeating function.
+    // const arsul  =()=>{
+    //   console.log('Hello');
+    // }
+
+    // const changeText = document.querySelector('h1');
+    // changeText.innerHTML = 'Best javascript tutorial';
+
+    // const changeText = ( function(){ //Here: changeText is a variable and it is a function
+    //     document.querySelector('h1').innerHTML = 'Best javascript tutorial';
+    //     console.log("Funtion execute!");
+    // })
+
+    // Here: changeMe is a variable and it is a function and here we are give the refrence of changeText function to changeMe variable.
+    // Here: changeMe() like this means execute the function.
+    // const changeMe =  setTimeout(changeText, 2000) //Here: setTimeout is a function and it is used to call the function after the given time and only once.
+
+    // document.querySelector('#stop').addEventListener('click', ()=>{
+    //     clearTimeout(changeMe);
+    //     console.log('Stopped');
+        
+    // })
+
+  
+    
+    // const stop = document.querySelector('#stop');
+    
+    
+    const h1 = document.querySelector('h1');
+
+    const NameText = function(){
+        h1.innerHTML = 'Arsul jawed';
+        console.log('Function execute!');
+    }
+    //Here: I am using setInterval function to call the NameText function after every 2 seconds and also contineously run the function.
+    const changeMe = setInterval(NameText, 2000);
+
+    document.querySelector('#stop').addEventListener('click',()=>{
+        // clearTimeout(changeMe)
+        clearInterval(changeMe);
+        console.log('Function Stop');
+        
+    })
+    
+</script>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai and code</h1>
+    <button style="padding: 12px; background-color: green; border-radius: 5px; font-size: 14px;" id="start">Start</button>
+    <button style="padding: 12px; background-color: red; border-radius: 5px; font-size: 14px;" id="stop">Stop</button>
+</body>
+<script>
+
+    //setTimeout: It will execute only once after the given time.
+    //setInterval: It will execute after the given time and keep executing after the given time.
+    //clearTimeout: It will stop the setTimeout.
+    //clearInterval: It will stop the setInterval.
+    //register call stack: It will keep the track of the function that is being executed.
+    //Event loop: It will keep the track of the function that is being executed.
+    //Callback queue: It will keep the track of the function that is being executed.
+
+    // const sayDate = ((str)=>{
+    //     console.log(str, new Date().toLocaleTimeString());
+    // }) 
+
+//    const interValId = setInterval(sayDate, 1000, "hii")
+
+//     clearInterval(interValId);
+
+// Method 1: This is optimization of the below code.
+    // let intervalId;
+    
+    // document.querySelector('#start').addEventListener('click', ()=>{
+    //     intervalId = setInterval(sayDate, 1000, "My Current Time is:");
+    // })
+
+    // document.querySelector('#stop').addEventListener('click', ()=>{
+    //     clearInterval(intervalId);
+    //     console.log('Stopped');
+        
+    // })
+
+
+
+
+
+                // Method 2:
+
+    const start = document.querySelector('#start');
+    const stop = document.querySelector('#stop');
+   
+    
+    
+    let intervalId;
+    start.addEventListener('click',()=>{
+        if (!intervalId) {
+            intervalId = setInterval(chaneMe, 1000);
+        }
+
+        function chaneMe(){
+        console.log("hiii arsul jawed", new Date().toLocaleString());
+        
+    }
+       console.log("start button activate");
+        
+    });
+    
+
+    stop.addEventListener('click',()=>{
+      clearInterval(intervalId)
+        intervalId = null;
+
+        console.log("stop button activate");
+    });
+   
+    
+  
+    
+</script>
+</html>

@@ -25,6 +25,9 @@ const regularUser = {
 // console.log(regularUser.fullname.userName.firstname);
 
 
+
+
+
 const obj1 = {1: "a", 2: "b", 9:"w", 10: "r"}
 const obj2 = {3: "d", 5: "f", 6: "u"}
 const obj4 = {11:"as", 12: "ar"}
@@ -54,6 +57,8 @@ const users = [
 ]
 
 
+// console.log(users[1]);
+
 users[1].email
 
 // console.log(tinderUser);
@@ -62,7 +67,7 @@ users[1].email
 // console.log(Object.values(tinderUser));
 // console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('name'));
+// console.log(tinderUser.hasOwnProperty('name'));
 
 const course = {
     courseNmae: "js in chai",

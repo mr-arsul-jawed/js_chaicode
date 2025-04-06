@@ -30,10 +30,11 @@ const myArr2 = new Array(1,2,3,4,5) // Here: object
 // console.log(myArr.indexOf(5)); //Here: indexOf() check the index of the number in the array.
 
 // here: when we you  join() function then array make string array.
-// const newArr = myArr.join()
+const newArr = myArr.join()
 
 // console.log(myArr);
 // console.log(typeof newArr);
+
 
 
 // slice, splice
@@ -42,19 +43,24 @@ const myArr2 = new Array(1,2,3,4,5) // Here: object
 
 //splice: The splice manipulate the original array.
 
-// console.log("A ", myArr);
+// const myArr3 = [0, 1, 2, 3, 4, 5]
+// console.log("A ", myArr3);
 
-
-// const myn1 = myArr.slice(1, 3)
+// const myn1 = myArr3.slice(1, 3)
 // console.log(myn1);
+// console.log(myArr3);
 
 
-// console.log("B ", myArr);
 
-// const myn2 = myArr.splice(1, 3)
+// const myArr3 = [0, 1, 2, 3, 4, 5]
 
-// console.log("C", myArr);
-// console.log(myn2);
+
+// console.log("B ", myArr3);
+
+// const myn2 = myArr3.splice(1, 3)
+
+// console.log("C", myArr3);
+// console.log(myArr3);
 
 
 

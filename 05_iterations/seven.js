@@ -9,7 +9,7 @@ const newNum = myNumbers
                .map((num)=> num - 2)
                .filter((num)=> num >= 0 && num <= 50)
 
-console.log(newNum);
+// console.log(newNum);
 
 // const n = myNumbers
 //             .map((num1)=> num1 * 100)
@@ -18,4 +18,14 @@ console.log(newNum);
 
 // console.log(n);
 
+
+
+//iterations loops: for-of, for-in, forEach, map, filter
+
+const greet = "hello world"
+
+//for-of
+for(const val of greet)
+    console.log(val);
+    
 

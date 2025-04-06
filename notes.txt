@@ -1,0 +1,7 @@
+setTimeout: It will execute only once after the given time.
+setInterval: It will execute after the given time and keep executing after the given time.
+clearTimeout: It will stop the setTimeout.
+clearInterval: It will stop the setInterval.
+register call stack: It will keep the track of the function that is being executed.
+Event loop: It will keep the track of the function that is being executed.
+Callback queue: It will keep the track of the function that is being executed.

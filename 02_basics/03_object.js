@@ -17,6 +17,7 @@ const JsUser = {
 
 }
 
+// console.log(JsUser.location);
 // console.log(JsUser.email);
 // console.log(JsUser["email"]); //here: when you key defined like this - "email" then you acces like this ["email"].
 // console.log(JsUser["full name"]); 
@@ -42,12 +43,11 @@ JsUser.greetingTwo = function(){
 // console.log(JsUser.greeting());
 // console.log(JsUser.greetingTwo());
 
-const detail ={
-    "name":"arsul",
-    roll:"bca"
-}
-
-console.log(detail.name);
+// const detail ={
+//     "name":"arsul",
+//     roll:"bca"
+// }
 
 
+// console.log(detail.name);
 

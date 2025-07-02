@@ -91,7 +91,7 @@
 //Here: Example for fetch
 // async function user(){
 //    try {
-//     const response= await fetch('https://api.github.com/users/mr-arsul-jawed')
+//     const response = await fetch('https://api.github.com/users/mr-arsul-jawed')
 //     const data = await response.json()
 //     console.log(data);
 //    } catch(error){
@@ -120,23 +120,24 @@
 
 
 
-fetch('https://api.github.com/users/mr-arsul-jawed')
-.then((res)=>{
-    console.log(res);
-    return res.json()
-})
-.then((data)=>{
-    // console.log(data);
-    return data.avatar_url
-})
-.then((email)=>{
-    console.log(email);
+// fetch('https://api.github.com/users/mr-arsul-jawed')
+// .then((res)=>{
+//     // console.log(res);
+//     return res.json()
+// })
+// .then((data)=>{
+//     console.log(data);
+//     return data.url
+// })
+// .then((url)=>{
+//     console.log(url);
     
-})
-.catch((error)=>{
-  console.log(error);
+// })
+// .catch((error)=>{
+//   console.log(error);
   
-})
+// })
+
 
 
 

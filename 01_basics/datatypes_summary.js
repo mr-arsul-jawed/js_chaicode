@@ -54,17 +54,17 @@ anothername = "aashim"
 // console.log(youtube);
 // console.log(anothername);
 
-// let user = {
-//     email:"arsul@google.com",
-//     upi:"upi@ybl",
-// }
+let user = {
+    email:"arsul@google.com",
+    upi:"upi@ybl",
+}
 
-// let userTwo = user;
+let userTwo = user;
 
-// userTwo.email = "google@gmail.com"
+userTwo.email = "google@gmail.com"
 
-// console.log(user.email);
-// console.log(userTwo.email);
+console.log(user.email);
+console.log(userTwo.email);
 
 
 

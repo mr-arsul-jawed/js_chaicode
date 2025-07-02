@@ -26,7 +26,7 @@ function one() {
        
     
    }
-//    console.log(website);
+   console.log(website);
    two ()
 }
 
@@ -51,7 +51,7 @@ function add(num) {
 
 
 // Here: This is also function but some time this is expresion
-addTwo(5) // When is here initializ then give me error . this is hoisting function
+// addTwo(5) // When is here initializ then give me error . this is hoisting function
 const addTwo = function (num) {
    return num + 2
 }

@@ -45,7 +45,7 @@ const myCoding =[
 
 
 myCoding.map((item)=>{
-   console.log(`languaeName ${item.languageName}`);
+   console.log(`languageName ${item.languageName}`);
    console.log(`languagefilename: ${item.languagefilename}`);
 })
 
